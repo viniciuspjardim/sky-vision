@@ -1,0 +1,23 @@
+{
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "search.exclude": {
+    "**/.git": true,
+    "**/.next": true,
+    "**/.turbo": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/node_modules": true
+  },
+
+  "cSpell.words": ["nextjs", "turborepo", "vercel"]
+}
