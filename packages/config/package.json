@@ -1,9 +1,9 @@
 {
   "name": "config",
   "version": "0.0.0",
-  "main": "index.js",
   "license": "MIT",
   "files": [
+    ".prettierrc.json",
     "eslint-preset.js"
   ],
   "dependencies": {
