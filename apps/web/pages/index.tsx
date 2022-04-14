@@ -1,4 +1,4 @@
-import { Button } from 'ui'
+import { Button } from '@sky-vision/ui'
 
 export default function Web() {
   return (

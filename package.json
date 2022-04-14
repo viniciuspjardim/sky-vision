@@ -1,6 +1,6 @@
 {
-  "name": "turborepo-basic-shared",
-  "version": "0.0.0",
+  "name": "@sky-vision/monorepo",
+  "version": "0.1.0",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -22,5 +22,5 @@
     "node": ">=14.0.0"
   },
   "packageManager": "yarn@1.22.17",
-  "prettier": "config/.prettierrc.json"
+  "prettier": "@sky-vision/config/.prettierrc.json"
 }
