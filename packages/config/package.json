@@ -6,9 +6,12 @@
     ".prettierrc.json",
     "eslint-preset.js"
   ],
-  "dependencies": {
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
     "eslint-config-next": "^12.0.8",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-react": "7.28.0"
+    "eslint-plugin-react": "7.28.0",
+    "typescript": "^4.5.3"
   }
 }
