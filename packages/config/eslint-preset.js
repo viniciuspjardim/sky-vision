@@ -10,11 +10,12 @@ module.exports = {
       rootDir: ['apps/*/', 'packages/*/'],
     },
   },
+  ignorePatterns: ['**/dist'],
   rules: {
     '@next/next/no-html-link-for-pages': 'off',
-    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    'no-unused-vars': 'off',
     'react/jsx-key': 'off',
-    'no-unused-vars': 'error',
     'no-console': ['error', { allow: ['warn', 'error', 'debug', 'info'] }],
   },
   overrides: [
