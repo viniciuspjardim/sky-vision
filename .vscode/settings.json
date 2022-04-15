@@ -19,5 +19,5 @@
     "**/node_modules": true
   },
 
-  "cSpell.words": ["nextjs", "turborepo", "vercel"]
+  "cSpell.words": ["nestjs", "nextjs", "prebuild", "turborepo", "vercel"]
 }

@@ -1,7 +1,7 @@
 {
   "name": "@sky-vision/config",
   "version": "0.1.0",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "files": [
     ".prettierrc.json",
     "eslint-preset.js"
