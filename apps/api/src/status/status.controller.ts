@@ -1,11 +1,11 @@
-import { Controller, Get, HttpStatus, Res } from '@nestjs/common'
+import { Controller, Get } from '@nestjs/common'
 
 @Controller('status')
 export class StatusController {
   @Get()
   status() {
     return {
-      message: 'ok'
+      message: 'ok',
     }
   }
 }
