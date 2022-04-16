@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    image: sv-app-img
+    container_name: sv-app
+    restart: always
+    ports:
+      - 3310:3310
+      - 3311:3311
+      - 3312:3312
+
+    volumes:
+      - .:/usr/app
+      - /usr/app/node_modules/
+      - /usr/app/apps/api/node_modules/
+      - /usr/app/apps/docs/node_modules/
+      - /usr/app/apps/web/node_modules/
+      - /usr/app/packages/config/node_modules/
+      - /usr/app/packages/ui/node_modules/
