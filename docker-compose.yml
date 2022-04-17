@@ -1,10 +1,24 @@
+# ==== Docker configuration (development only) ====
+
 version: '3.9'
 
 services:
+  db:
+    image: postgres:14
+    container_name: skv-db
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - db:/var/lib/postgresql/data
+
   app:
     build: .
-    image: sv-app-img
-    container_name: sv-app
+    image: skv-app-img
+    container_name: skv-app
     restart: always
     ports:
       - 3310:3310
@@ -13,9 +27,7 @@ services:
 
     volumes:
       - .:/usr/app
-      - /usr/app/node_modules/
-      - /usr/app/apps/api/node_modules/
-      - /usr/app/apps/docs/node_modules/
-      - /usr/app/apps/web/node_modules/
-      - /usr/app/packages/config/node_modules/
-      - /usr/app/packages/ui/node_modules/
+
+volumes:
+  db:
+    driver: local
